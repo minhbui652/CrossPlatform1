@@ -6,15 +6,11 @@ const windownHeight = Dimensions.get('window').height;
 
 export const StartScreen = ( {navigation}) => {
     return (
-        <SafeAreaView style={{ flex: 1, justifyContent: 'center' }}>
+        
             <View style={styles.container}>
                 <Image source={require('../../img/logo.png')} />
                 <Text style={{ fontWeight: "bold", color: "#560cce", fontSize: 22 }}>Login Template</Text>
                 <Text style={{ textAlign: "center", }}>The easiest way to start with your amazing application</Text>
-                {/* 
-                <View style={styles.ButtonStyle}><Button color="#560cce" title="Login" /></View>
-                <View style={styles.ButtonStyle}><Button title="sign up" /></View>
-                */}
                 <Pressable style={styles.button} onPress={() =>{
                     navigation.navigate('LoginScreen');
                 }}>
