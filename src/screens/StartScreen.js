@@ -6,7 +6,7 @@ const windownHeight = Dimensions.get('window').height;
 
 export const StartScreen = ( {navigation}) => {
     return (
-        
+        <SafeAreaView style={{ flex: 1, justifyContent: 'center'}}>
             <View style={styles.container}>
                 <Image source={require('../../img/logo.png')} />
                 <Text style={{ fontWeight: "bold", color: "#560cce", fontSize: 22 }}>Login Template</Text>
