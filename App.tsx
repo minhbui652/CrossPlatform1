@@ -40,9 +40,9 @@ function App() {
         <Stack.Screen name='StartScreen' component={StartScreen}
           options={{ title: 'StartScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
         <Stack.Screen name='LoginScreen' component={LoginScreen}
-          options={{ title: 'StartScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
+          options={{ title: 'LoginScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
         <Stack.Screen name='RegisterScreen' component={RegisterScreen}
-          options={{ title: 'StartScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
+          options={{ title: 'RegisterScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
