@@ -35,16 +35,18 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName='StartScreen'>
-        <Stack.Screen name='StartScreen' component={StartScreen}
-          options={{ title: 'StartScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
-        <Stack.Screen name='LoginScreen' component={LoginScreen}
-          options={{ title: 'LoginScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
-        <Stack.Screen name='RegisterScreen' component={RegisterScreen}
-          options={{ title: 'RegisterScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <SafeAreaView style={{ flex: 1 }}>
+      <NavigationContainer>
+        <Stack.Navigator initialRouteName='StartScreen'>
+          <Stack.Screen name='StartScreen' component={StartScreen}
+            options={{ title: 'StartScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
+          <Stack.Screen name='LoginScreen' component={LoginScreen}
+            options={{ title: 'LoginScreen', headerShown: false, headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
+          <Stack.Screen name='RegisterScreen' component={RegisterScreen}
+            options={{ title: 'RegisterScreen', headerStyle: { backgroundColor: '#560cce' }, headerTintColor: '#fff', headerTitleStyle: { fontWeight: 'bold' } }} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </SafeAreaView>
   );
 }
 
